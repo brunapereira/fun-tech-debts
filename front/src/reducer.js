@@ -12,6 +12,8 @@ const reducer = (state = initialState, action) => {
         ...state,
        [action.name]: [...state[action.name], 'a']
       } 
+    default:
+      return state
   }
 }
 
