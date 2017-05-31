@@ -6,7 +6,7 @@ import Card from './card'
 const Quadrant = ({ name, addCard, cards, title }) => 
   <div className={"col-1-2 quadrant " + name } onClick={() => addCard(name)}>
     <div className="grid">
-      <p>{title}</p>
+      <h1>{title}</h1>
       { cards.map((card, index) => <Card id={index} />) }
     </div>
   </div>
