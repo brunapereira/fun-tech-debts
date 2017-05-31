@@ -1,10 +1,4 @@
 node_modules/
-web/public/
-out/
-.gradle
-*.iml
-*.ipr
-*.iws
-dist/
-cert.txt
-*.swp
+*.sw*
+*.log
+/back/public
