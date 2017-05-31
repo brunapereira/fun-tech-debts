@@ -1,6 +1,6 @@
 const initialState = {
-  AA: {title: 'High Value, High Effort', cards: []},
-  AB: {title: 'High Value, Low Effort', cards: []},
+  AA: {title: 'High Value, Low Effort', cards: []},
+  AB: {title: 'High Value, High Effort', cards: []},
   BB: {title: 'Low Value, Low Effort', cards: []},
   BA: {title: 'Low Value, High Effort', cards: []}
 }
