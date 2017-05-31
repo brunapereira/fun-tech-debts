@@ -1,12 +1,13 @@
 import React from 'react' 
 import { connect } from 'react-redux'
 import { addCard } from '../actions'
+import Card from './card'
 
 const Quadrant = ({ name, addCard, cards, title }) => 
   <div className={"col-1-2 quadrant " + name } onClick={() => addCard(name)}>
     <div className="grid">
       <p>{title}</p>
-      { cards.map((card, index) =><div className="col-1-3"><div className="card" id={index}>card</div></div>) }
+      { cards.map((card, index) => <Card id={index} />) }
     </div>
   </div>
 
