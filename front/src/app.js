@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Quadrant from './quadrant' 
+import Header from './header' 
 
 const quadrants = [ 
   { name: 'AA' },
@@ -9,6 +10,10 @@ const quadrants = [
   { name: 'BB' }
 ]
 
-export default (props) => (<div className='grid board' > 
-  { quadrants.map((quadrant) => <Quadrant {...quadrant}/>)  }
- </div>)
+export default (props) => 
+  <div className="wrapper" >
+    <Header />
+    <div className='grid board' > 
+      { quadrants.map((quadrant) => <Quadrant {...quadrant}/>)  }
+    </div>
+  </div>
