@@ -9,6 +9,6 @@ const quadrants = [
   { name: 'BB' }
 ]
 
-export default (props) => (<div> 
+export default (props) => (<div className='grid board' > 
   { quadrants.map((quadrant) => <Quadrant {...quadrant}/>)  }
  </div>)

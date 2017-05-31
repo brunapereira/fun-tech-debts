@@ -1,5 +1,5 @@
 import React from 'react' 
 
-export default ({ name }) => (<div className= {"quadrant " + name } >
+export default ({ name }) => (<div className= {"col-1-2 quadrant " + name } >
  AAA 
 </div>)
