@@ -7,14 +7,14 @@ import Header from './header'
 const App = ({ quadrants }) => 
   <div className="wrapper" >
     <Header />
-    <div className='grid board' > 
+    <div className='grid board'>
       { Object.keys(quadrants).map((quadrant) => <Quadrant name={quadrant} />)  }
     </div>
   </div>
 
-const mapStateToProps = (state) => {
-  return { quadrants: state }
-}
+const mapStateToProps = (state) => ({
+  quadrants: state
+})
 
 export default connect(mapStateToProps)(App)
 
