@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { expect } from 'chai'
 
-import { App } from 'components/App.js' 
+import { App } from 'components/app.js'
 
 describe('App', () => {
   it('App has content', () => {
