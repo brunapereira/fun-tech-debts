@@ -5,5 +5,5 @@ machine:
 deployment:
   production:
     branch: master
-      commands:
-        - surge --project ./build --domain funtechdebts.surge.sh
+    commands:
+      - surge --project ./build --domain funtechdebts.surge.sh
