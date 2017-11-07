@@ -1,3 +1,5 @@
 import React from 'react' 
 
-export default (props) => <header><h1>Fun Tech Debt</h1></header>
+import './header.less'
+
+export default (props) => <header className='header'><h1>Fun Tech Debt</h1></header>
