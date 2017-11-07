@@ -1,3 +1,9 @@
 machine:
   node:
     version: 6.10.3
+
+deployment:
+  production:
+    branch: master
+      commands:
+        - surge --project ./build --domain funtechdebts.surge.sh

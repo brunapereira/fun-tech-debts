@@ -29,7 +29,7 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.jsx?$/, exclude: /(node_modules)/, loader: "babel-loader", query: { presets: ['react', 'es2015']} },
+      { test: /\.jsx?$/, exclude: /(node_modules)/, loader: "babel-loader", query: { presets: ['react', 'env']} },
         { test: /\.scss$/, use: extractLess.extract({ use: [ { loader: "css-loader"}, { loader: "sass-loader" } ], fallback: "style-loader" })},
         { test: /\.css$/, use: extractLess.extract({ use: [ { loader: "css-loader", options: { modules: true, sourceMap: true, importLoaders: 1, localIdentName: "[name]--[local]--[hash:base64:8]" }}, { loader: "sass-loader" } ], fallback: "style-loader" })},
         { test: /\.less$/, use: extractLess.extract({ use: [ { loader: "css-loader"}, { loader: "less-loader"} ], fallback: "style-loader" })},
