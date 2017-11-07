@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bymarkone/capable.git"
+    "url": "git+https://github.com/brunapereira/fun-tech-debts.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bymarkone/capable/issues"
+    "url": "https://github.com/brunapereira/fun-tech-debts/issues"
   },
-  "homepage": "https://github.com/bymarkone/capable#readme"
+  "homepage": "https://github.com/brunapereira/fun-tech-debts#readme"
 }
