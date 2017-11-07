@@ -1,0 +1,29 @@
+.quadrant {
+  border: 1px black solid;
+  height: 45%;
+  & > .grid {
+    position: relative;
+    height: 100%;
+  }
+  h2 {
+    color: silver;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  button {
+    border: none;
+    background: none;
+    font-weight: 500;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+
+    &:focus { outline: 0; }
+  }
+}
+
