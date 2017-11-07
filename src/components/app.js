@@ -5,7 +5,7 @@ import Quadrant from './quadrant'
 import Header from './header' 
 
 export const App = ({ quadrants }) =>
-  <div className="wrapper" >
+  <div className="wrapper">
     <Header />
     <div className='grid board'>
       { Object.keys(quadrants).map((quadrant) => <Quadrant name={quadrant} />)  }
