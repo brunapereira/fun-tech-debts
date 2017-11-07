@@ -10,7 +10,7 @@ const Quadrant = ({ name, addCard, cards, title }) =>
     <div className="grid">
       <h2>{title}</h2>
       <button onClick={() => addCard(name)}>+</button>
-      { cards.map((card, index) => <Card id={index} />) }
+      { cards.map((card, index) => <Card id={index} quadrant={name} />) }
     </div>
   </div>
 

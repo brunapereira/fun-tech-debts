@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default ({index}) => <div className="col-1-3"><div className="card" id={index}></div></div>
+import './card.less'
+
+export default ({index, quadrant}) => <div className="col-1-3"><div className={"card " + quadrant}></div></div>
