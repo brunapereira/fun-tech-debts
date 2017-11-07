@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import Quadrant from './quadrant' 
 import Header from './header' 
 
-const App = ({ quadrants }) => 
+export const App = ({ quadrants }) =>
   <div className="wrapper" >
     <Header />
     <div className='grid board'>

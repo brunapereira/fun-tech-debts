@@ -36,7 +36,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --colors --progress --content-base ${npm_package_config_dist}",
-    "test": "mocha test --recursive --compilers js:babel-core/register",
+    "test": "NODE_PATH=./src:./test mocha test --recursive --compilers js:babel-core/register",
     "build": "webpack --devtool source-map --cache --colors --progress"
   },
   "repository": {
