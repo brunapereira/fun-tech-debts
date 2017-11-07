@@ -1,10 +1,19 @@
 .quadrant {
-  border: 1px black solid;
   height: 45%;
   & > .grid {
     position: relative;
     height: 100%;
   }
+
+  &.AA, &.BB {
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+  }
+
+  &.AB, &.BA {
+    border-bottom: 1px black solid;
+  }
+
   h2 {
     color: silver;
     position: absolute;
