@@ -3,3 +3,4 @@ node_modules/
 *.log
 /back/public
 .DS_Store
+build/
