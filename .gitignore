@@ -2,3 +2,4 @@ node_modules/
 *.sw*
 *.log
 /back/public
+.DS_Store
