@@ -25,6 +25,7 @@
     "enzyme": "^2.8.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
+    "ignore-styles": "^5.0.1",
     "less-loader": "^4.0.5",
     "mocha": "^3.4.2",
     "react-addons-test-utils": "^15.5.1",
@@ -37,7 +38,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --colors --progress --content-base ${npm_package_config_dist}",
-    "test": "NODE_PATH=./src:./test mocha test --recursive --compilers js:babel-core/register",
+    "test": "NODE_PATH=./src:./test mocha test --recursive --compilers js:babel-core/register --require ignore-styles",
     "build": "webpack --devtool source-map --cache --colors --progress"
   },
   "repository": {
