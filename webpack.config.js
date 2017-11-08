@@ -7,7 +7,7 @@ const extractLess = new ExtractTextPlugin({
     filename: "index.css"
 })
 const htmlWebpack = new HtmlWebpackPlugin({
-	template: `${__dirname}/src/index.html`
+	template: `${__dirname}/src/200.html`
 })
 const nodeEnv = new webpack.DefinePlugin({
   'process.env': {
