@@ -5,11 +5,15 @@ import './card.less'
 class Card extends Component {
   constructor() {
     super()
-    this.state = { isEditing: false }
+    this.state = { isEditing: false, content: '' }
   }
 
   handleEdit() {
     this.setState({ isEditing: !this.state.isEditing })
+  }
+
+  handleChange(e) {
+    this.setState({ content: e.target.value })
   }
 
   render() {
@@ -18,7 +22,7 @@ class Card extends Component {
       ? (
         <div className='col-1-3'>
           <div className={'card ' + this.props.quadrant}>
-            <textarea></textarea>
+            <textarea value={this.state.content} onChange={this.handleChange.bind(this)}></textarea>
             <button className='done' onClick={this.handleEdit.bind(this)}>done</button>
           </div>
         </div>
@@ -26,6 +30,7 @@ class Card extends Component {
       : (
         <div className='col-1-3'>
           <div className={'card ' + this.props.quadrant}>
+            <div className='content'>{this.state.content}</div>
             <a className='pencil' onClick={this.handleEdit.bind(this)}><i className='fa fa-pencil'></i></a>
           </div>
         </div>
