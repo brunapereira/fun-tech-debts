@@ -1,3 +1,6 @@
+import { combineReducers } from 'redux'
+import { firebaseStateReducer as firebase } from 'react-redux-firebase'
+
 const initialState = {
   AA: {title: 'High Value, Low Effort', cards: []},
   AB: {title: 'High Value, High Effort', cards: []},
@@ -5,7 +8,7 @@ const initialState = {
   BA: {title: 'Low Value, High Effort', cards: []}
 }
 
-const reducer = (state = initialState, action) => {
+const application = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_CARD':
       return {
@@ -20,4 +23,4 @@ const reducer = (state = initialState, action) => {
   }
 }
 
-export default reducer
+export default combineReducers({ application, firebase })

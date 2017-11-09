@@ -12,8 +12,8 @@ export const App = ({ quadrants }) =>
     </div>
   </div>
 
-const mapStateToProps = (state) => ({
-  quadrants: state
+const mapStateToProps = ({ application }) => ({
+  quadrants: application
 })
 
 export default connect(mapStateToProps)(App)

@@ -14,10 +14,10 @@ const Quadrant = ({ name, addCard, cards, title }) =>
     </div>
   </div>
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = ({ application }, ownProps) => {
   return {
-    cards: state[ownProps.name].cards,
-    title: state[ownProps.name].title
+    cards: application[ownProps.name].cards,
+    title: application[ownProps.name].title
   }
 }
 

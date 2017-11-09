@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { compose } from 'redux'
+import { connect } from 'react-redux'
+import { firebaseConnect, dataToJS } from 'react-redux-firebase'
 
 import './card.less'
 
@@ -9,6 +12,8 @@ class Card extends Component {
   }
 
   handleEdit() {
+    const { firebase } = this.props    
+    firebase.push('/cards', { text: 'add' })
     this.setState({ isEditing: !this.state.isEditing })
   }
 
@@ -39,4 +44,6 @@ class Card extends Component {
   }
 }
 
-export default Card
+export default compose(
+  firebaseConnect(['/cards'], connect(({ firebase }) => { cardsFromFirebase: dataToJS(firebase, 'cards') }))
+)(Card)
