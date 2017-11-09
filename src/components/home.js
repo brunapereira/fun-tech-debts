@@ -1,5 +1,10 @@
 import React from 'react' 
-import Header from './header'
 
-export default () => <Header />
+import './home.less'
+
+export default () =>
+  <div className='home'>
+    <h1>Fun Tech Debts</h1>
+    <button>New Board</button>
+  </div>
 
