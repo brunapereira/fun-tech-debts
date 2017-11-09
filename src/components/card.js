@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, dataToJS } from 'react-redux-firebase'
+import { firebase } from 'react-redux-firebase'
 
 import './card.less'
 
@@ -44,6 +44,4 @@ class Card extends Component {
   }
 }
 
-export default compose(
-  firebaseConnect(['/cards'], connect(({ firebase }) => { cardsFromFirebase: dataToJS(firebase, 'cards') }))
-)(Card)
+export default firebase()(Card)
